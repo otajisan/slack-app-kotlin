@@ -1,0 +1,51 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: slack-app-kotlin
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  devtools:
+    restart:
+      enabled: true
+
+server:
+  port: 9990
+
+slack:
+  app:
+    channel:
+    token:
+
+management:
+  server:
+    port: 39990
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - prometheus
+          - openapi
+          - swagger-ui
+
+springdoc:
+  # https://springdoc.org/#actuator-support
+  # http://localhost:39990/actuator
+  show-actuator: true
+  use-management-port: true
+  api-docs:
+    enabled: true
+  # http://localhost:39990/actuator/swagger-ui
+  swagger-ui:
+    enabled: true
+
+logging:
+  level:
+    root: INFO
+    web: DEBUG
+    org:
+      springframework:
+        web: INFO
