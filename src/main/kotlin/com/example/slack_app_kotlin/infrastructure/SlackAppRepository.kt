@@ -2,7 +2,7 @@ package com.example.slack_app_kotlin.infrastructure
 
 import com.example.slack_app_kotlin.domain.SlackChatResponse
 import com.example.slack_app_kotlin.domain.SlackMessage
-import com.example.slack_app_kotlin.logger
+import com.example.slack_app_kotlin.util.logger
 import com.slack.api.methods.MethodsClient
 import com.slack.api.methods.SlackApiException
 import com.slack.api.model.Attachment

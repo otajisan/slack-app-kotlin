@@ -1,4 +1,4 @@
-package com.example.slack_app_kotlin
+package com.example.slack_app_kotlin.util
 
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory

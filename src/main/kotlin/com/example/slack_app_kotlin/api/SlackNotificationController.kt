@@ -1,4 +1,4 @@
-package com.example.slack_app_kotlin
+package com.example.slack_app_kotlin.api
 
 import com.example.slack_app_kotlin.domain.SlackNotificationService
 import io.swagger.v3.oas.annotations.Operation
